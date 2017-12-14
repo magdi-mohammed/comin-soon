@@ -1,5 +1,6 @@
 @import "framework";
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Iceberg');
 
 html, body {
   font-size: 10px;
@@ -8,7 +9,6 @@ html, body {
 body {
   // font-family: 'Source Sans Pro', sans-serif;
   font-family: 'Roboto', sans-serif;
-  padding: 30px;
 
 }
 %main-background {
@@ -58,23 +58,4 @@ a, a:hover, a:visited, a:active {
   &:hover {
     opacity: 1;
   }
-}
-
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 6rem;
-  height: 6rem;
-  background: #fff;
-  color: #777;
-  border-radius: 100%;
-  cursor: pointer;
-  position: absolute;
-  z-index: 28;
-  top: 0;
-  opacity: 0;
-  visibility: hidden;
-  margin-bottom: 1rem;
-  @include transition(top, 0.3s);
 }

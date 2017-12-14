@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Iceberg");
 html, body {
   font-size: 10px; }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  padding: 30px; }
+  font-family: 'Roboto', sans-serif; }
 
-#counter-section, #counter-section #subscribe-form .form-g input[type="submit"] {
+#counter-section {
   background: rgba(52, 131, 255, 0.75);
   background: -webkit-linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%);
   background: -o-linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%);
@@ -17,7 +17,7 @@ a, a:hover, a:visited, a:active {
   color: inherit;
   text-decoration: none; }
 
-#counter-section .menu .menu-icon, #counter-section .social .social-icon {
+#counter-section .menu .menu-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,37 +34,16 @@ a, a:hover, a:visited, a:active {
   -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   -o-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
-  #counter-section .menu .active.menu-icon, #counter-section .social .active.social-icon {
+  #counter-section .menu .active.menu-icon {
     opacity: 0.7; }
-  #counter-section .menu .menu-icon:hover, #counter-section .social .social-icon:hover {
+  #counter-section .menu .menu-icon:hover {
     opacity: 1; }
-
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 6rem;
-  height: 6rem;
-  background: #fff;
-  color: #777;
-  border-radius: 100%;
-  cursor: pointer;
-  position: absolute;
-  z-index: 28;
-  top: 0;
-  opacity: 0;
-  visibility: hidden;
-  margin-bottom: 1rem;
-  -webkit-transition: top 0.3s ease-in-out 0s;
-  -moz-transition: top 0.3s ease-in-out 0s;
-  -o-transition: top 0.3s ease-in-out 0s;
-  transition: top 0.3s ease-in-out 0s; }
 
 #counter-section {
   color: #fff;
-  min-height: calc(100vh - 60px);
-  padding-top: 8rem;
-  padding-bottom: 8rem; }
+  min-height: 100vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
   #counter-section .logo-box {
     text-align: center;
     margin-bottom: 2rem; }
@@ -108,23 +87,29 @@ a, a:hover, a:visited, a:active {
         background-image: radial-gradient(#06bebe, #1657b9); }
       #counter-section .nav .icon-target#contact-us-sec {
         background-image: radial-gradient(#ce0a58, #f88db1); }
-  #counter-section .social {
-    position: fixed;
-    left: 6rem;
-    top: 6rem;
-    z-index: 5; }
-    #counter-section .social .icon a {
-      padding: 25px; }
+  #counter-section .content {
+    text-align: center; }
+    #counter-section .content .content__main-heading {
+      font-size: 5.2rem;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+      font-weight: bold; }
+    #counter-section .content .content__main-text {
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 2rem; }
   #counter-section .counter .countdown {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 4rem; }
     #counter-section .counter .countdown .countdown-container {
       position: relative; }
       #counter-section .counter .countdown .countdown-container .countdown-heading {
         font-size: 7rem;
-        letter-spacing: 0.2rem; }
+        letter-spacing: 0.2rem;
+        font-family: 'Iceberg', cursive; }
       #counter-section .counter .countdown .countdown-container .countdown-value {
         font-size: 1.6rem;
         color: #dddddd; }
@@ -140,68 +125,92 @@ a, a:hover, a:visited, a:active {
         width: 10rem; }
     #counter-section .counter .countdown .countdown-container > span {
       display: block; }
-  #counter-section .content {
-    text-align: center; }
-    #counter-section .content .content__main-heading {
-      font-size: 3.2rem;
-      margin-top: 4rem;
-      margin-bottom: 1.5rem;
-      font-weight: bold;
-      letter-spacing: 1.2rem; }
-    #counter-section .content .content__main-text {
-      font-size: 2rem;
-      letter-spacing: 0.3rem;
-      margin-top: 0;
-      margin-bottom: 4rem; }
-  #counter-section #subscribe-form .form-g {
-    position: relative; }
-    #counter-section #subscribe-form .form-g input[type=text] {
-      border-radius: 3rem;
+  #counter-section .more-buttons {
+    text-align: center;
+    margin-bottom: 4rem; }
+    #counter-section .more-buttons .button {
+      padding: 10px 20px;
       border: none;
-      padding: 1rem;
+      background: #fff;
       color: #777;
       font-size: 2rem;
-      font-family: sans-serif;
-      width: 400px;
-      display: block;
-      margin: auto; }
-    #counter-section #subscribe-form .form-g input[type="submit"] {
-      color: #fff;
-      height: 40px;
-      margin-top: 4px;
-      border: none;
-      border-radius: 3rem;
-      font-weight: bold;
-      font-size: 1.6rem;
-      position: absolute;
-      top: 0;
-      right: 375px; }
-  #counter-section .sections {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    padding: 3rem;
-    padding-top: 8rem;
-    padding-bottom: 8rem; }
-    #counter-section .sections .section {
-      opacity: 0;
-      visibility: hidden;
-      position: absolute;
-      -webkit-transition: all 0.3s ease 0.2s;
-      -moz-transition: all 0.3s ease 0.2s;
-      -o-transition: all 0.3s ease 0.2s;
-      transition: all 0.3s ease 0.2s; }
-      #counter-section .sections .section .logo-box {
-        margin-bottom: 4rem; }
-      #counter-section .sections .section .heading {
-        text-align: center; }
-      #counter-section .sections .section.active {
-        opacity: 1;
-        visibility: visible;
-        z-index: 4;
+      position: relative;
+      z-index: 1;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      -webkit-transition: box-shadow 0.3s ease-in-out 0s;
+      -moz-transition: box-shadow 0.3s ease-in-out 0s;
+      -o-transition: box-shadow 0.3s ease-in-out 0s;
+      transition: box-shadow 0.3s ease-in-out 0s; }
+      #counter-section .more-buttons .button.more-info {
+        margin-right: 0.5rem;
+        margin-bottom: 2rem; }
+      #counter-section .more-buttons .button.notify-me {
+        margin-left: 0.5rem; }
+      #counter-section .more-buttons .button:hover {
+        -webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        background: #fdfdfd; }
+  #counter-section .social {
+    display: flex;
+    max-width: 20rem;
+    margin: auto;
+    justify-content: space-between; }
+    #counter-section .social .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 6rem;
+      height: 6rem;
+      background: #fff;
+      color: #777;
+      border-radius: 100%;
+      cursor: pointer;
+      border: 2px solid #fff;
+      z-index: 1;
+      -webkit-transition: top 0.3s ease-in-out 0s;
+      -moz-transition: top 0.3s ease-in-out 0s;
+      -o-transition: top 0.3s ease-in-out 0s;
+      transition: top 0.3s ease-in-out 0s; }
+      #counter-section .social .icon:hover {
+        background: transparent;
+        color: #fff; }
+      #counter-section .social .icon::after {
+        content: '';
+        display: block;
         position: absolute;
-        width: calc(100% - 60px); }
+        width: 100%;
+        height: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        top: 0;
+        left: 0;
+        background: #fff;
+        opacity: 1;
+        z-index: -1;
+        transition: transform 0.2s, opacity 0.3s;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1); }
+      #counter-section .social .icon:hover::after {
+        -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4);
+        opacity: 0; }
+      #counter-section .social .icon a {
+        padding: 25px; }
 
 /*# sourceMappingURL=style.css.map */
