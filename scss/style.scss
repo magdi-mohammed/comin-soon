@@ -111,6 +111,11 @@
         font-size: 7rem;
         letter-spacing: 0.2rem;
         font-family: 'Iceberg', cursive;
+        
+        &.seconds-top {
+          animation: fade-animate-seconds 1s infinite;
+        }
+
       }
 
       .countdown-value {
@@ -129,6 +134,12 @@
         height: 0.2rem;
         width: 10rem;
       }
+    }
+
+    @keyframes fade-animate-seconds {
+      0%  {opacity: 0;}
+      30% {opacity: 1;}
+      100%  {opacity: 1;}
     }
 
     .countdown-container > span  {

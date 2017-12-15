@@ -39,6 +39,16 @@ a, a:hover, a:visited, a:active {
   #counter-section .menu .menu-icon:hover {
     opacity: 1; }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .countdown-container:not(:last-of-type):after {
+    left: 105px !important; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .countdown-container:not(:last-of-type):after {
+    left: 85px !important;
+    width: 8rem !important; } }
+@media (max-width: 767px) {
+  .countdown-container:not(:last-of-type):after {
+    display: none !important; } }
 #counter-section {
   color: #fff;
   min-height: 100vh;
@@ -110,6 +120,8 @@ a, a:hover, a:visited, a:active {
         font-size: 7rem;
         letter-spacing: 0.2rem;
         font-family: 'Iceberg', cursive; }
+        #counter-section .counter .countdown .countdown-container .countdown-heading.seconds-top {
+          animation: fade-animate-seconds 1s infinite; }
       #counter-section .counter .countdown .countdown-container .countdown-value {
         font-size: 1.6rem;
         color: #dddddd; }
@@ -123,6 +135,13 @@ a, a:hover, a:visited, a:active {
         background-color: #777;
         height: 0.2rem;
         width: 10rem; }
+@keyframes fade-animate-seconds {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
     #counter-section .counter .countdown .countdown-container > span {
       display: block; }
   #counter-section .more-buttons {
