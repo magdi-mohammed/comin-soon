@@ -7,6 +7,11 @@ $(document).ready(function () {
     var menuIcon = $('.menu-icon'),
         icon = $('.icon');
     
+    setInterval(function () {
+        $('.counter .countdown .countdown-container.seconds .countdown-heading.seconds-top').css({opacity : 0});
+        $('.counter .countdown .countdown-container.seconds .countdown-heading.seconds-top').animate({opacity : 1});
+    }, 1000);
+    
     icon.each(function () {
         // set index
         $(this).attr('data-index', $(this).index());
