@@ -3,61 +3,85 @@
 $(document).ready(function () {
     "use strict";
     
-    // icons 
-    var menuIcon = $('.menu-icon'),
-        icon = $('.icon');
-    
     setInterval(function () {
         $('.counter .countdown .countdown-container.seconds .countdown-heading.seconds-top').css({opacity : 0});
         $('.counter .countdown .countdown-container.seconds .countdown-heading.seconds-top').animate({opacity : 1});
     }, 1000);
     
-    icon.each(function () {
-        // set index
-        $(this).attr('data-index', $(this).index());
-        // set target 
-        $(this).attr('data-target', '#' + $(this).attr('id') + '-sec').addClass('nav-icon');
-    });
+    // more buttons
     
-    // on click on icon active it
-    menuIcon.on('click', function () {
-        $(this).addClass('active');
+//    $('.more-buttons .button').on('click', function () {
+//        if (!$(this).hasClass('active')) {
+//            $(this).addClass('active');
+//        }
+//    });
+    
+    // notify me button
+    
+    $('.more-buttons .button.notify-me').on('click', function () {
         
-        icon = $(this).parent().find('.icon');
-        icon.each(function () {
-
-            // animate sub icons
-            $(this).css({
-                top : $(this).data('index') * 6 + $(this).data('index') + 'rem',
-                opacity: 1,
-                visibility: 'visible'
-            });
-        });
-    });
-    
-    // on click outside the active icon deactive it
-    $(document).on('click', function (e) {
-        var clickOver = $(e.target);
-        if (!clickOver.closest('.social').length && !clickOver.closest('.menu').length && menuIcon.hasClass('active')) {
-            menuIcon.removeClass('active');
-            $('.icon').each(function () {
-                var $this = $(this);
-                // deactive sub icons
-                $this.css({top : 0});
-                setTimeout(function () {
-                    $this.css({opacity: 0, visibility: 'hidden'});
-                }, 250);
-            });
+        if (!$('#counter-section').hasClass('sec-hide')) {
+            $('#counter-section').addClass('sec-hide');
+        }
+        
+        if (!$('.overlay').hasClass('show')) {
+            $('.overlay').addClass('show');
+        }
+        
+        if (!$('#notify-form-section').hasClass('show')) {
+            $('#notify-form-section').addClass('show');
         }
     });
     
-    // nav icons 
-    $('.nav-icon').each(function () {
-        $(this).on('click', function () {
-            $($(this).data('target')).addClass('active').siblings().removeClass('active');
-            window.console.log($(this).data('target') + '-content');
-            $($(this).data('target') + '-content').addClass('active').siblings().removeClass('active');
-        });
+    // notify me cancel buton 
+    
+    $('#notify-form-section .cancel-button').on('click', function () {
+        
+        if ($('#notify-form-section').hasClass('show')) {
+            $('#notify-form-section').removeClass('show');
+        }
+        
+        if ($('.overlay').hasClass('show')) {
+            $('.overlay').removeClass('show');
+        }
+        
+        if ($('#counter-section').hasClass('sec-hide')) {
+            $('#counter-section').removeClass('sec-hide');
+        }
+    });
+    
+    // more info button
+    
+    $('.more-buttons .button.more-info').on('click', function () {
+        
+        if (!$('#counter-section').hasClass('sec-hide')) {
+            $('#counter-section').addClass('sec-hide');
+        }
+        
+        if (!$('.overlay').hasClass('show')) {
+            $('.overlay').addClass('show');
+        }
+        
+        if (!$('#more-info-section').hasClass('show')) {
+            $('#more-info-section').addClass('show');
+        }
+    });
+    
+    // more info cancel buton 
+    
+    $('#more-info-section .cancel-button').on('click', function () {
+        
+        if ($('#more-info-section').hasClass('show')) {
+            $('#more-info-section').removeClass('show');
+        }
+        
+        if ($('.overlay').hasClass('show')) {
+            $('.overlay').removeClass('show');
+        }
+        
+        if ($('#counter-section').hasClass('sec-hide')) {
+            $('#counter-section').removeClass('sec-hide');
+        }
     });
     
 });
