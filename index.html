@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="animation, svg, organic, morphing, shapes, css, javascript, web design, web dev" />
   <title> RAI </title>
 
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -17,135 +18,220 @@
 </head>
 
 <body>
-
-  <!-- Counter Section -->
-  <section id="counter-section">
-      <div class="container">
-        <!-- logo  -->
-        <div class="logo-box">
-            <a href="index.html" target="_self">
-                <img class="logo" src="images/logo-white.png" alt="logo">
-            </a>
-        </div>
-        <!-- menu -->
-        <!-- <div class="menu">
-            <span class="menu-icon menu-icon">
-                <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
-            </span>
-            <span class="icon">
-                <a href="index.html">
-                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                </a>
-            </span>
-            <span class="icon" id="info">
-                <i class="fa fa-info fa-2x" aria-hidden="true"></i>
-            </span>
-            <span class="icon" id="our-work">
-                <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
-            </span>
-            <span id="contact-us" class="icon">
-                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-            </span>
-        </div> -->
-
-        <!-- nav -->
-        <!-- <nav class="nav">
-            <div id="info-sec" class="icon-target"></div>
-            <div id="our-work-sec" class="icon-target"></div>
-            <div id="contact-us-sec" class="icon-target"></div>
-        </nav> -->
+    <div class="content">
         
-        <!-- content -->
-        <div class="content">
-            <h1 class="content__main-heading">Launch in</h1>
-        </div>
+        <div class="overlay"></div>
+        
+        <svg class="scene" width="100%" height="100vh" preserveAspectRatio="none" viewBox="0 0 1440 800" xmlns:pathdata="http://www.codrops.com/">
+            <path d="M 1066,436 C 1051,543.8 973.2,656.2 873.6,700.1 756.6,751.7 600.9,725 492.4,657.4 431.5,619.5 387.5,546.9 376.7,476 360.3,368.3 377.9,229.2 462.5,160.5 589.5,57.34 815.4,42.24 952.4,131.7 1044,190.8 1081,328.8 1066,436 Z" pathdata:id="M 1041,450.4 C 1023,547.7 992.8,667.7 905.7,714.5 793.1,775 639,728.7 524.5,671.8 453.3,636.4 382.2,575.4 360.2,499 329.7,393 344.6,249.2 426,174.9 568.6,44.66 851.1,-8.71 1002,111.8 1091,182.7 1061,338.6 1041,450.4 Z;M 1066,436 C 1051,543.8 976.5,664.5 873.6,700.1 761,739.1 636.4,655.8 529.5,603.1 441.6,559.8 325.8,520.1 293.8,427.5 263.1,338.4 294.5,213.4 368.2,154.8 520.7,33.48 790.1,23.76 952.4,131.7 1043,191.7 1081,328.8 1066,436 Z;M 1066,436 C 1053,531.1 930.7,580.1 842.2,617.2 734,662.7 598.4,707.8 492.4,657.4 427.6,626.6 387.5,546.9 376.7,476 360.3,368.3 376.9,227.9 462.5,160.5 567.6,77.69 749.9,37.5 863.8,148.8 947.6,230.7 1082,320.1 1066,436 Z"/>
+        </svg>
+        
+        <!-- Counter Section -->
+        <section id="counter-section" class="">
+          <div class="container">
 
-        <!-- counter -->
-        <div class="counter">
-            <div class="countdown" data-date="2018-01-01"></div>
-        </div>
-        <!-- form -->
-        <!-- <form id="subscribe-form">
-            <div class="form-g">
-                <input type="text" class="">
-                <input type="submit" value="Subscribe">
+            <!-- menu -->
+            <!-- <div class="menu">
+                <span class="menu-icon menu-icon">
+                    <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+                </span>
+                <span class="icon">
+                    <a href="index.html">
+                        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                    </a>
+                </span>
+                <span class="icon" id="info">
+                    <i class="fa fa-info fa-2x" aria-hidden="true"></i>
+                </span>
+                <span class="icon" id="our-work">
+                    <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
+                </span>
+                <span id="contact-us" class="icon">
+                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                </span>
+            </div> -->
+
+            <!-- nav -->
+            <!-- <nav class="nav">
+                <div id="info-sec" class="icon-target"></div>
+                <div id="our-work-sec" class="icon-target"></div>
+                <div id="contact-us-sec" class="icon-target"></div>
+            </nav> -->
+
+            <!-- content -->
+            <div class="content-txt">
+                <h1 class="content__main-heading">Coming Soon</h1>
             </div>
-        </form> -->
-        <!-- sections -->
-        <!-- <div class="sections">
-            
-            <div id="info-sec-content" class="section">
-                <div class="logo-box">
-                    <img src="images/logo-white.png">
-                </div>
-                <div class="heading">
-                    <h2>
-                        About Us
-                    </h2>
-                </div>
-            </div>
 
-            <div id="our-work-sec-content" class="section">
-                <div class="logo-box">
-                    <img src="images/logo-white.png">
-                </div>
-                <div class="heading">
-                    <h2>
-                        our Work
-                    </h2>
-                </div>
-            </div>
-
-            <div id="contact-us-sec-content" class="section">
-                <div class="logo-box">
-                    <img src="images/logo-white.png">
-                </div>
-                <div class="heading">
-                    <h2>
-                        Contact Us
-                    </h2>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- more buttons -->
-
-        <div class="more-buttons">
-            <button class="button more-info">more information</button>
-            <button class="button notify-me">notify me</button>
-        </div>
-
-        <!-- content -->
-        <div class="content">
-            <p class="content__main-text">stay in touch</p>
-        </div>
-
-        <!-- social -->
-        <div class="social">
-            <span class="icon">
-                <a href="#">
-                <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+            <!-- logo  -->
+            <div class="logo-box">
+                <a href="index.html" target="_self">
+                    <img class="logo" src="images/logo-white.png" alt="logo">
                 </a>
-            </span>
-            <span class="icon">
+            </div>
+
+            <!-- counter -->
+            <div class="counter">
+                <div class="countdown" data-date="2019-01-01"></div>
+            </div>
+            <!-- form -->
+            <!-- <form id="subscribe-form">
+                <div class="form-g">
+                    <input type="text" class="">
+                    <input type="submit" value="Subscribe">
+                </div>
+            </form> -->
+            <!-- sections -->
+            <!-- <div class="sections">
+
+                <div id="info-sec-content" class="section">
+                    <div class="logo-box">
+                        <img src="images/logo-white.png">
+                    </div>
+                    <div class="heading">
+                        <h2>
+                            About Us
+                        </h2>
+                    </div>
+                </div>
+
+                <div id="our-work-sec-content" class="section">
+                    <div class="logo-box">
+                        <img src="images/logo-white.png">
+                    </div>
+                    <div class="heading">
+                        <h2>
+                            our Work
+                        </h2>
+                    </div>
+                </div>
+
+                <div id="contact-us-sec-content" class="section">
+                    <div class="logo-box">
+                        <img src="images/logo-white.png">
+                    </div>
+                    <div class="heading">
+                        <h2>
+                            Contact Us
+                        </h2>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- more buttons -->
+
+            <div class="more-buttons">
+                <button class="button more-info">more information</button>
+                <button class="button notify-me">notify me</button>
+            </div>
+
+            <!-- copy write -->
+            <div class="copy-write">
+                <p>MR.Kayo Team &copy;</p>
+            </div>  
+            <!-- social -->
+            <div class="social">
+                <span class="icon">
+                    <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </span>
+                <span class="icon">
+                    <a href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </span>
+                <span class="icon">
+                    <a href="#">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </span>
+            </div>
+              
+          </div>
+        </section>
+        <!-- Counter Section -->
+        <!-- notify section -->
+        <section id="notify-form-section">
+            <div class="cancel-icon-holder">
+                <button class="cancel-button">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="notify-body">
+                <div class="notify-icon">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </div>
+                <div class="notify-txt">
+                    <h2>Stay in touch</h2>
+                    <p>Be first to know about the latest updates and get exclusive offer on our grand opening</p>
+                </div>
+                <form id="notify-form">
+                    <input id="notify-email" type="email" placeholder="Your E-mail" name="email">
+                    <button class="notify-submit" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+        <!-- end of notify section -->
+        <!-- more info section -->
+        <section id="more-info-section">
+            <div class="cancel-icon-holder">
+                <button class="cancel-button">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="more-info-txt">
+                <h2 class="heading">WE ARE Company,</h2>
+                <p class="lead">Hi, I must explain to you how all this great idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
+                <p class="lead">but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+            </div>
+            <div class="more-info-gallay">
                 <a href="#">
-                <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                    <img src="images/about-image-1-lg.jpg" alt="about-image-1">
                 </a>
-            </span>
-            <span class="icon">
                 <a href="#">
-                <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+                    <img src="images/about-image-2-lg.jpg" alt="about-image-2">
                 </a>
-            </span>
-        </div>
-      </div>
-  </section>
-  <!-- Counter Section -->
+                <a href="#">
+                    <img src="images/about-image-3-lg.jpg" alt="about-image-3">
+                </a>
+                <a href="#">
+                    <img src="images/about-image-4-lg.jpg" alt="about-image-4">
+                </a>
+            </div>
+            <div class="contact-us">
+                <div class="contact-us-txt">
+                    <h2 class="heading">Contact Us</h2>
+                    <p class="lead">We launch our new website soon.</p>
+                    <p class="lead">Please stay updated and follow.</p>
+                </div>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-custom" id="form-name" name="form-name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control form-control-custom" id="form-email" name="form-email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control form-control-custom" rows="1" id="form-message" name="form-message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-custom" role="button">
+                          Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- end of more info section -->
+    </div>
 
   <!-- start the script -->
   <script src="js/jquery-2.2.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/countdown.min.js"></script>
+  <script src="js/anime.min.js"></script>
+  <script src="js/demo4.js"></script>
   <script src="js/plugins.js"></script>
   <script>
       $(function () {
